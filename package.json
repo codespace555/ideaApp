@@ -1,0 +1,18 @@
+{
+  "name": "ideaapp",
+  "version": "1.0.0",
+  "description": "This is app, where we register and login and curd(Create, update, read, delete ) our idea\r ## RESOURCES",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Naman Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  }
+}
