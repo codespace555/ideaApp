@@ -1,6 +1,7 @@
 const express = require("express")
+const dotenv = require("dotenv")
+const serverConfig = require("./configs/server.config.js")
 var app = express()
-const PORT = 3010
-app.listen(PORT ,()=>{
-    console.log(`Server running on http://localhost:${PORT}`)
+app.listen(serverConfig.PORT ,()=>{
+    console.log(`Server running on http://localhost:${serverConfig.PORT}`)
 })
