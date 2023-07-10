@@ -5,8 +5,8 @@ const express = require("express")
 const serverConfig = require("./configs/server.config.js")
 const mongoose = require("mongoose")
 const dbConfig = require("./configs/db.config.js")
-// const { init } = require("./models/user.model.js")
 const userModel = require("./models/user.model.js")
+const bcrypt = require ("bcrypt")
 var app = express()
 // .................................................
 // here connect the monogo db
@@ -36,7 +36,7 @@ if(admin){
         userId: "admin",
         email: "polunaman01@gmail.com",
         userType: "ADMIN",
-        password: "polunaman@123"
+        password: bcrypt.hashSync("polunaman@123",8)
 
     })
     console.log(admin)
