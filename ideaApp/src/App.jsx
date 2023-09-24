@@ -1,6 +1,7 @@
+import conf from "./config/conf"
 
 function App() {
-console.log(import.meta.env.VITE_APPWRITE_URL)
+console.log(conf.APPWRITE_BUCKET_ID)
 
   return (
     <>
