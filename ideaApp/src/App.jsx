@@ -1,8 +1,6 @@
-import conf from "./config/conf"
+
 
 function App() {
-console.log(conf.APPWRITE_BUCKET_ID)
-
   return (
     <>
     <h1>
