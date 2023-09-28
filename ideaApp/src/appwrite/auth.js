@@ -2,6 +2,7 @@ import conf from "../config/conf";
 import { Client, Account, ID } from "appwrite";
 export class AuthService {
   client = new Client();
+  account;
   constructor() {
     this.client
       .setEndpoint(conf.APPWRITE_URL)
@@ -38,7 +39,7 @@ export class AuthService {
     try {
       return await this.account.get();
     } catch (error) {
-      throw error;
+      console.log("Appwrite serive :: getCurrentUser :: error", error);
     }
 
     return null;
